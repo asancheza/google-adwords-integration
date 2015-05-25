@@ -1,0 +1,447 @@
+[May 11 2014 17:49:19.000000 - ERROR] POST /api/adwords/cm/v201309/CampaignService?access_token=ya29.1.AADtN_VS7ROfJyXB8wbeINImeLXNQOCTHWr5fGeqrqOua-eN1GAwtROOV3ajgio HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.4.24, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 408
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201309">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:developerToken>INSERT_DEVELOPER_TOKEN_HERE</ns1:developerToken>
+      <ns1:userAgent>mobsyte (AwApi-PHP/5.2.3, Common-PHP/5.2.3, PHP/5.4.24)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Sun, 11 May 2014 17:49:19 GMT
+Expires: Sun, 11 May 2014 17:49:19 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 518
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+      <requestId>0004f92373412b680ae0dac400002bd0</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>0</operations>
+      <responseTime>52</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+          <message>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>INSERT_DEVELOPER_TOKEN_HERE</trigger>
+            <errorString>QuotaCheckError.INVALID_TOKEN_HEADER</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>INVALID_TOKEN_HEADER</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[May 11 2014 17:50:03.000000 - ERROR] POST /api/adwords/cm/v201309/CampaignService?access_token=ya29.1.AADtN_WnjjwQSQ3sUUV3m7Kn5_zj1EjGHwpoxGIOnJo5yzQ51M_UjcfXo3N3E3U HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.4.24, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 408
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201309">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:developerToken>INSERT_DEVELOPER_TOKEN_HERE</ns1:developerToken>
+      <ns1:userAgent>mobsyte (AwApi-PHP/5.2.3, Common-PHP/5.2.3, PHP/5.4.24)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Sun, 11 May 2014 17:50:03 GMT
+Expires: Sun, 11 May 2014 17:50:03 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 517
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+      <requestId>0004f92375dd8ce00ae00a1400004821</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>0</operations>
+      <responseTime>37</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+          <message>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>INSERT_DEVELOPER_TOKEN_HERE</trigger>
+            <errorString>QuotaCheckError.INVALID_TOKEN_HEADER</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>INVALID_TOKEN_HEADER</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[May 11 2014 17:50:50.000000 - ERROR] POST /api/adwords/cm/v201309/CampaignService?access_token=ya29.1.AADtN_XYmHptvaxe1sItOoTKbaEhK958YDCBbeUDx-GorEI6tGRvRuJiSoqJYzc HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.4.24, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 408
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201309">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:developerToken>INSERT_DEVELOPER_TOKEN_HERE</ns1:developerToken>
+      <ns1:userAgent>mobsyte (AwApi-PHP/5.2.3, Common-PHP/5.2.3, PHP/5.4.24)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Sun, 11 May 2014 17:50:50 GMT
+Expires: Sun, 11 May 2014 17:50:50 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 518
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+      <requestId>0004f92378a868c80ae06441000020f7</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>0</operations>
+      <responseTime>35</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+          <message>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>INSERT_DEVELOPER_TOKEN_HERE</trigger>
+            <errorString>QuotaCheckError.INVALID_TOKEN_HEADER</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>INVALID_TOKEN_HEADER</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[May 11 2014 18:10:01.000000 - ERROR] POST /api/adwords/cm/v201309/ReportDefinitionService?access_token=ya29.1.AADtN_VkFHi0YMTbnoEu6oSVWC_gY8ohTR-PEmiFt8CNF5KNzCW5dSll5JmvzQ0 HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.4.24, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 342
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201309">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:developerToken>INSERT_DEVELOPER_TOKEN_HERE</ns1:developerToken>
+      <ns1:userAgent>mobsyte (AwApi-PHP/5.2.3, Common-PHP/5.2.3, PHP/5.4.24)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:getReportFields>
+      <ns1:reportType>CAMPAIGN_PERFORMANCE_REPORT</ns1:reportType>
+    </ns1:getReportFields>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Sun, 11 May 2014 18:10:01 GMT
+Expires: Sun, 11 May 2014 18:10:01 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 528
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+      <requestId>0004f923bd420a200ae0b78700000a88</requestId>
+      <serviceName>ReportDefinitionService</serviceName>
+      <methodName>getReportFields</methodName>
+      <operations>0</operations>
+      <responseTime>47</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+          <message>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>INSERT_DEVELOPER_TOKEN_HERE</trigger>
+            <errorString>QuotaCheckError.INVALID_TOKEN_HEADER</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>INVALID_TOKEN_HEADER</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[May 11 2014 18:12:29.000000 - ERROR] POST /api/adwords/cm/v201309/ReportDefinitionService?access_token=ya29.1.AADtN_X78kja2bE7zBrmgmfHFX4y4NQ9xReVs5Dbc1hA0OcPB9xcSgchP7r6ihU HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.4.24, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 342
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201309">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:developerToken>INSERT_DEVELOPER_TOKEN_HERE</ns1:developerToken>
+      <ns1:userAgent>mobsyte (AwApi-PHP/5.2.3, Common-PHP/5.2.3, PHP/5.4.24)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:getReportFields>
+      <ns1:reportType>CAMPAIGN_PERFORMANCE_REPORT</ns1:reportType>
+    </ns1:getReportFields>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Sun, 11 May 2014 18:12:29 GMT
+Expires: Sun, 11 May 2014 18:12:29 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 529
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+      <requestId>0004f923c619f0b80ae0b6d1000078f7</requestId>
+      <serviceName>ReportDefinitionService</serviceName>
+      <methodName>getReportFields</methodName>
+      <operations>0</operations>
+      <responseTime>180</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+          <message>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>INSERT_DEVELOPER_TOKEN_HERE</trigger>
+            <errorString>QuotaCheckError.INVALID_TOKEN_HEADER</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>INVALID_TOKEN_HEADER</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[May 11 2014 18:14:22.000000 - ERROR] POST /api/adwords/cm/v201309/ReportDefinitionService?access_token=ya29.1.AADtN_XaZshllMLWgGuE8oc3XU3dhKD_e_aVo5qX9LADha5XAhFwsSbrwFPO4Y8 HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.4.24, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 342
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201309">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:developerToken>INSERT_DEVELOPER_TOKEN_HERE</ns1:developerToken>
+      <ns1:userAgent>mobsyte (AwApi-PHP/5.2.3, Common-PHP/5.2.3, PHP/5.4.24)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:getReportFields>
+      <ns1:reportType>CAMPAIGN_PERFORMANCE_REPORT</ns1:reportType>
+    </ns1:getReportFields>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Sun, 11 May 2014 18:14:22 GMT
+Expires: Sun, 11 May 2014 18:14:22 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 527
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+      <requestId>0004f923cccf16900ae02d0700004d60</requestId>
+      <serviceName>ReportDefinitionService</serviceName>
+      <methodName>getReportFields</methodName>
+      <operations>0</operations>
+      <responseTime>234</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201309">
+          <message>[QuotaCheckError.INVALID_TOKEN_HEADER @ ; trigger:'INSERT_DEVELOPER_TOKEN_HERE']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>INSERT_DEVELOPER_TOKEN_HERE</trigger>
+            <errorString>QuotaCheckError.INVALID_TOKEN_HEADER</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>INVALID_TOKEN_HEADER</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
